@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+const Color purple = Colors.purple;
+
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.green,
+            borderRadius: BorderRadius.circular(200),
+          ),
+          alignment: Alignment.center,
+          width: 150,
+          height: 150,
+          child: const Text(
+            'тестовая програма',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        const SizedBox(height:30),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(onPressed: () {}, child: Text('Тест')),
+            const SizedBox(width:30),
+            ElevatedButton(onPressed: () {}, child: Text('Тест')),
+            const SizedBox(width:30),
+            ElevatedButton(onPressed: () {}, child: Text('Тест')),
+          ],
+        ),
+      ],
+    );
+  }
+}
